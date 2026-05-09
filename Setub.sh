@@ -45,7 +45,7 @@ TERMUX_APP_PACKAGE_MANAGER=apt pkg --check-mirror update
 yes | pkg upgrade
 yes | pkg i python
 yes | pkg i python-pip
-pip install requests   pytz  colorama datetime
+pip install requests  pytz  colorama datetime logsnag 
 export CFLAGS="-Wno-error=implicit-function-declaration"
 pkg install python-psutil -y
 
