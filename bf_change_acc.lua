@@ -62,7 +62,7 @@ while task.wait(30) do
         local s_gh, r_gh = pcall(function()
             return game.ReplicatedStorage.Remotes.CommF_:InvokeServer("BuyGodhuman", true)
         end)
-        Godhuman = r_gh
+        Godhuman = r_gh == 1
     end
 
     -- Kiểm tra từng điều kiện trong Config
